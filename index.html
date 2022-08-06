@@ -1,7 +1,24 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
   
-  
+  <script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    <!--
+
+    var url = $(location).attr('href'),
+
+        fparts = url.split("?"),
+        first_part = fparts[fparts.length - 1];
+    if (screen.width <= 767) {
+        if (url == first_part)
+            document.location = "mobile.html";
+        else
+            document.location = "mobile.html?" + first_part;
+    }
+    //-->
+
+</script>
+
   
   <head>
   
@@ -212,6 +229,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             
                             
 
+                            <div class="clearfix"></div>
 
 
 
