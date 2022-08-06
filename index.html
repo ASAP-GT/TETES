@@ -258,11 +258,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         function postToGoogle(){
             var filed1 = $("#name").val();
             var filed2 = $("#phone").val();
+var filed3 = $("#article").val();
+
+
+
+
 
             submitted=true;
             $.ajax({
                 url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdO2WOXCAr6Lmr7VKmcTmgwKBwa_4bxX4WtY8uF-IzqRln9Lw/formResponse",
-                data: {"entry.428211434": filed1, "entry.1722505422" : filed2},
+                data: {"entry.428211434": filed1, "entry.1722505422" : filed2, "entry.2056466192" : filed3 },
                 type:"post",
                 dataType: "xml",
                 success: setTimeout(() => {
@@ -279,12 +284,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	
 	
 </div>
-    <!--Start footer-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end footer-->
+    <!--End block4-->
+
 
     <script src="js/jquery.validate.js"></script>
     <script src="js/popper.main.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugin.min.js"></script>
+    <script src="js/plugin.js"></script>
 </body>
 	
 	
