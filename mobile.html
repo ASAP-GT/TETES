@@ -245,7 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         function postToGoogle(){
             var filed1 = $("#name").val();
             var filed2 = $("#phone").val();
-var filed3 = $("#article").val();
+            var filed3 = $("#article").val();
 
 
 
@@ -253,7 +253,7 @@ var filed3 = $("#article").val();
             submitted=true;
             $.ajax({
                 url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdO2WOXCAr6Lmr7VKmcTmgwKBwa_4bxX4WtY8uF-IzqRln9Lw/formResponse",
-                data: {"entry.428211434": filed1, "entry.1722505422" : filed2, "entry.2056466192" : filed3,"entry.1653687215" : filed4,"entry.2145903139" : filed5 },
+                data: {"entry.428211434": filed1, "entry.1722505422" : filed2, "entry.2056466192" : filed3 },
                 type:"post",
                 dataType: "xml",
                 success: setTimeout(() => {
